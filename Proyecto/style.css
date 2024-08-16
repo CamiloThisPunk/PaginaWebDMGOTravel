@@ -1,0 +1,164 @@
+/* SECTION */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    
+      
+}
+
+.seccion-oscura{
+    color: #f5f6f7;
+    background-color: rgb(17, 14, 14);
+}
+
+.seccion-clara{
+    color: black;
+    background-color: aliceblue;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Black Ops One", cursive;
+
+}
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: brown;
+}
+.seccion-texto{
+    font-size: 1.2rem;
+}
+.texto-negro{
+    color: black;
+}
+.texto-blanco{
+    color: white;
+}
+
+/* SECCION HERO */
+.hero{
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+
+}
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-imagen-principal{
+    width: 2560px;
+    height: 1440px;
+    border: 15%;
+    margin: 20px;
+}
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: brown;
+}
+
+/* SOBRE MI -- SECCION DOS*/
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+/* SECCION EXPERIENCIA*/
+.experiencia{
+    padding: 40px; /*40px 60px 40px;  */
+}
+
+/* estilo a los cuadros de columna */
+/* .experiencia .row div{
+    height: 250px;
+    background-color: coral;
+    border: 3px solid crimson;
+} */
+
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;   /*declaracion del efecto de transicion */
+}
+
+ /* transicion de seleccion de experiencias */
+.experiencia .columna:hover{
+    color: white;
+    background-color: black;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: chartreuse;
+    background-color: black;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badge{
+    margin: 5px;
+
+
+}
+
+/* proyecto turismo */
+.proyectos-recientes{
+    padding: 40px;
+}
+
+/* BARRA DE NAVEGACION*/
+
+.navbar{
+    padding: 2rem;
+    background-color: aliceblue;
+
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*ADAPTABLE(RESPONSIVO) al momento de ajustar la pantalla*/
+
+@media screen and (max-width:767px) {
+    .navbar-brand{
+        display: none;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .hero-inferior-imagen{
+        max-width: 600px;
+    }
+    
+} 
+    
